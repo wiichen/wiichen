@@ -1,16 +1,92 @@
-## Hi there 👋
+# 三角形类型判断程序
 
-<!--
-**wiichen/wiichen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+一个功能完善的三角形类型判断工具，支持命令行和图形界面两种模式。
 
-Here are some ideas to get you started:
+## 功能特性
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- **多种运行模式**：命令行版本、图形界面版本
+- **三角形类型判断**：
+  - 等边三角形
+  - 等腰三角形
+  - 普通直角三角形
+  - 普通锐角三角形
+  - 普通钝角三角形
+  - 不能组成三角形
+- **实时时间戳**：图形界面左下角显示实时时间
+- **日志记录**：自动记录所有操作到日志文件
+- **异常处理**：完善的输入验证和错误处理
+
+## 项目结构
+
+```
+plane/
+├── main.py              # 主入口程序
+├── triangle.py          # 命令行版本
+├── triangle_gui.py      # 图形界面版本
+├── test_triangle.py     # 测试脚本
+├── triangle.log         # 日志文件（自动生成）
+└── README.md            # 说明文档
+```
+
+## 使用方法
+
+### 1. 通过主程序运行
+
+```bash
+python main.py
+```
+
+然后选择：
+- `1` - 命令行版本
+- `2` - 图形界面版本
+- `3` - 运行测试
+- `0` - 退出
+
+### 2. 直接运行命令行版本
+
+```bash
+python triangle.py
+```
+
+### 3. 直接运行图形界面版本
+
+```bash
+python triangle_gui.py
+```
+
+### 4. 运行测试
+
+```bash
+python test_triangle.py
+```
+
+## 图形界面说明
+
+- **界面颜色**：灰蓝色主题
+- **窗口标题**：三角形类型判断程序
+- **时间戳**：左下角实时显示当前时间
+- **输入框**：三个输入框分别输入三角形的三条边
+- **判断按钮**：点击后进行三角形类型判断
+- **清除按钮**：清除所有输入和结果
+- **结果显示**：金色文字显示判断结果
+
+## 日志记录
+
+所有操作都会记录到 `triangle.log` 文件中，包括：
+- 操作时间
+- 输入的三个数字
+- 判断结果
+- 错误和警告信息
+
+## 技术说明
+
+- **编程语言**：Python 3
+- **图形界面**：tkinter
+- **日志记录**：logging 标准库
+- **编码格式**：UTF-8
+
+## 注意事项
+
+1. 输入必须是正数
+2. 输入必须是有效的数字
+3. 程序会自动处理编码问题（Windows 系统）
