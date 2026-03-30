@@ -1,0 +1,17 @@
+{
+  "switch": {
+    "host": "192.168.9.1",
+    "port": 22,
+    "username": "netconf_admin",
+    "password": "YourStrongPassword123"
+  },
+  "interface": {
+    "name": "GigabitEthernet0/0/48",
+    "type": "trunk",
+    "allowed_vlans": "2-4094"
+  },
+  "vlans": {
+    "start": 1,
+    "end": 4094
+  }
+}
